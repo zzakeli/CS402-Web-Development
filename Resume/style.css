@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
+    background-color: rgb(219, 219, 219);
+}
 
+.name-box{
+    display: flex;
+}
+.name-box img{
+    display: inline;
+    height: 200px;
+}
+
+.name-box div{
+    margin-left: 8px;
+}
+
+.skills-box{
+    display: flex; 
+    flex-direction: row;
+}
+
+.footer-section img{
+    height: 15px;
+}
+
+.footer-section label{
+    margin-left: 5px;
+    position: relative;
+    bottom: 2.5px;
 }
