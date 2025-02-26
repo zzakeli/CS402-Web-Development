@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 3</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 97vh;
+        font-family: "Montserrat", Montserrat;
+        font-weight: 600;
+        background-color: rgb(224, 224, 224);
+      }
+
+      form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        height: 70vh;
+        width: 60vw;
+        flex-direction: column;
+        border-radius: 30px;
+        background-color: rgb(239, 239, 239);
+      }
+
+      .registration-label {
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 3vw;
+        margin-bottom: 2%;
+      }
+
+      .personal-details-label {
+        margin-left: 3%;
+        font-size: 1.5vw;
+      }
+
+      .identity-details-label {
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 1.5vw;
+      }
+
+      .personal-details {
+        margin-top: 1%;
+        margin-left: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8%;
+        height: 30%;
+        width: 95%;
+      }
+
+      .identity-details {
+        margin-top: 1%;
+        margin-left: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8%;
+        height: 30%;
+        width: 95%;
+      }
+
+      .personal-b1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .identity-b1 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .submit-button {
+        position: relative;
+        top: 3%;
+        margin-left: 3%;
+        height: 10%;
+        width: 20%;
+        font-family: "Montserrat", Montserrat;
+        font-size: 1.3vw;
+        background-color: rgb(95, 95, 255);
+        border-radius: 10px;
+        border: none;
+        color: white;
+      }
+
+      input {
+        height: 2vw;
+        width: 15vw;
+        margin-bottom: 4%;
+      }
+
+      select {
+        height: 2vw;
+        width: 15vw;
+        margin-bottom: 4%;
+      }
+      .mini-lab {
+        margin-bottom: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="Activity1.html"> <button>Activity 1</button></a>
+    <a href="Activity2.html"><button>Activity 2</button></a>
+    <a href="Activity3.html"><button>Activity 3</button></a>
+
+    <form>
+      <label class="registration-label">Registration</label>
+      <!-- --------------------------------------- -->
+      <label class="personal-details-label">Personal Details</label>
+      <!-- --------------------------------------- -->
+      <div class="personal-details">
+        <div class="personal-b1">
+          <label class="mini-lab">Full Name</label>
+          <input placeholder="Enter your name" />
+          <label class="mini-lab">Mobile Number</label>
+          <input placeholder="Enter mobile number" />
+        </div>
+        <div class="personal-b1">
+          <label class="mini-lab">Date of Birth</label>
+          <input type="date" />
+          <label class="mini-lab">Gender</label>
+          <select>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="personal-b1">
+          <label class="mini-lab">Email</label>
+          <input placeholder="Enter your email" />
+          <label class="mini-lab">Occupation</label>
+          <input placeholder="Enter your occupation" />
+        </div>
+      </div>
+
+      <label class="identity-details-label">Identity Details</label>
+
+      <div class="identity-details">
+        <div class="identity-b1">
+          <label class="mini-lab">ID Type</label>
+          <select>
+            <option>option</option>
+          </select>
+          <label class="mini-lab">Issued State</label>
+          <input placeholder="Enter issued state" />
+        </div>
+        <div class="identity-b1">
+          <label class="mini-lab">ID Number</label>
+          <input placeholder="Enter ID number" />
+          <label class="mini-lab">Issued Date</label>
+          <input type="date" />
+        </div>
+        <div class="identity-b1">
+          <label class="mini-lab">Issue Authority</label>
+          <input placeholder="Enter issue department" />
+          <label class="mini-lab">Expiry Date</label>
+          <input type="date" />
+        </div>
+      </div>
+
+      <input class="submit-button" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
